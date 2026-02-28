@@ -5,7 +5,7 @@ from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 
 app = FastAPI(title="Vrindavan Muni API")
 
-MODEL_DIR = "model_en"  # model folder will be added next
+MODEL_DIR = "gpt2"  # model folder will be added next
 
 device = "cpu"
 tokenizer = GPT2TokenizerFast.from_pretrained(MODEL_DIR)
